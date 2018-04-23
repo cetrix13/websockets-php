@@ -1,0 +1,19 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Websockets with Workman</title>
+    <script>
+    ws = new WebSocket("ws://127.0.0.1:2346");
+    ws.onopen = function() {
+        alert("connection success");
+        ws.send('tom');
+    };
+    ws.onmessage = function(e) {
+        alert("recv message from server：" + e.data);
+    };
+    </script>
+</head>
+<body>
+
+</body>
+</html>

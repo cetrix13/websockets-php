@@ -10,6 +10,8 @@ Prerequisites
 Installing
 =======
 * git clone the repo
+* run in command line composer install
+* run in command line bower install bootstrap
 * php server.php start
 * open in browser index.html
 * click button "Start"
